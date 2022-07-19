@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## ThalliumOS
 
-You can use the [editor on GitHub](https://github.com/EnterTheVoid-x86/thalliumos/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+An easy to use, low ram usage, fast and beautiful linux distribution.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ThalliumOS is based purely off of Debian 11, with the added benefits of the 5.18 kernel.
 
 ### Markdown
 
