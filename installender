@@ -1,0 +1,30 @@
+#!/bin/bash
+curl -LO https://raw.githubusercontent.com/EnterTheVoid-x86/thalliumos/main/ascii >> /dev/null && cat ascii && rm ascii
+echo -e "\e[35mEnderOS Frappucino Installer"
+sleep 1
+echo -e "\e[36mDownloading required files...\e[0m" && curl -LO https://raw.githubusercontent.com/EnterTheVoid-x86/thalliumos/main/1-packages.sh && curl -LO https://raw.githubusercontent.com/EnterTheVoid-x86/thalliumos/main/2-desktops.sh && curl -LO https://raw.githubusercontent.com/EnterTheVoid-x86/thalliumos/main/3-kernels.sh && curl -LO https://raw.githubusercontent.com/EnterTheVoid-x86/thalliumos/main/4-distroname.sh
+sleep 1
+echo -e "\e[36mGetting distro information...\e[0m"
+if [[ $(which pacman) = "/usr/bin/pacman" ]]; then
+	echo "Distribution is Arch based."
+else
+	echo "Error: Distribution is not Arch based. The installer cannot continue."
+	exit
+fi
+echo -e "Welcome to the \e[35mEnderOS Frappucino\e[0m installer."
+echo -e "Made by EnterTheVoid-x86."
+echo -e "\e[31mWARNING:\e[0m This distribution is in beta; I am not responsible for any damaged caused by this installer. Press any key to begin installation."
+read confirm
+echo "EnderOS includes a desktop environment of your choice, the linux-zen kernel, NetworkManager instead of iwctl, and a preconfigured audio server known as PipeWire."
+echo "Setup will begin installation in 5..."
+sleep 1
+echo "Setup will begin installation in 4..."
+sleep 1
+echo "Setup will begin installation in 3..."
+sleep 1
+echo "Setup will begin installation in 2..."
+sleep 1
+echo "Setup will begin installation in 1..."
+sleep 1
+echo "Setup is beginning the installation!"
+bash 1-packages.sh
