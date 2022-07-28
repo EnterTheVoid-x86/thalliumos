@@ -1,0 +1,11 @@
+NAME="Arch Linux"
+ID=arch
+ID_LIKE="arch"
+VERSION_ID=2022.05.29
+PRETTY_NAME="EnderOS"
+ANSI_COLOR="0;35"
+HOME_URL="https://ArchLinux.org"
+SUPPORT_URL="https://bbs.ArchLinux.org/"
+BUG_REPORT_URL="https://bugs.archlinux.org"
+IMAGE_ID=enderos
+IMAGE_VERSION=2022.07.22
