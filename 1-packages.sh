@@ -6,7 +6,7 @@ sudo pacman -Syu --noconfirm --needed base-devel fish git wget pipewire sddm net
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-sudo rm /etc/systemd/system/display-amanger.service
+sudo rm /etc/systemd/system/display-manager.service
 sudo systemctl enable sddm
 sudo systemctl enable NetworkManager
 systemctl --user enable pipewire.service
